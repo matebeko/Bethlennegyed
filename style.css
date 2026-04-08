@@ -445,4 +445,20 @@ img {
         object-fit: cover;
         aspect-ratio: 1 / 1;
     }
+
+    /* --- Közérdekű információk page specific elements --- */
+    .button-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 40px auto;
+    }
+
+    @media (min-width: 600px) {
+        .button-grid {
+            grid-template-columns: 1fr 1fr; /* Két oszlop a gomboknak asztali gépen */
+        }
+    }
 }
