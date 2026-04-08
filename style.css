@@ -199,7 +199,7 @@ img {
 }
 
 .back-to-top img {
-    width: 80px; /* Tulip icon size */
+    width: 80px;
     transition: transform 0.2s;
 }
 
@@ -220,6 +220,164 @@ img {
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Linkek page specific elements --- */
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.external-link-btn {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--primary-color);
+    color: #644400;
+    padding: 16px 24px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.external-link-btn:hover {
+    background-color: var(--primary-dark);
+    color: #C3975D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* --- Gyülekezeti alkalmak specific elements --- */
+.schedule-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-list li {
+    background-color: #C3975D;
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.schedule-title {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.schedule-time {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    .schedule-list li {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .schedule-title {
+        margin-bottom: 0;
+    }
+    
+    .schedule-time {
+        text-align: right;
+    }
+}
+
+/* --- Egyházközség page specific elements --- */
+.info-section.align-left {
+    text-align: left;
+    max-width: 100%;
+}
+
+.info-section.align-left h3 {
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+    .data-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+.data-grid h4 {
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.image-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* --- Közérdekű információk page specific elements --- */
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.button-grid .btn {
+    flex: 0 0 auto;
 }
 
 /* ==========================================================================
@@ -252,7 +410,7 @@ img {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (Only elements that MUST change on small screens)
    ========================================================================== */
 @media (max-width: 900px) {
     .menu-toggle {
@@ -290,183 +448,15 @@ img {
 
     .site-title {
         font-size: 1rem;
+        white-space: normal; 
     }
 
-    .button-group {
+    .button-group, .button-grid {
         flex-direction: column;
     }
     
-    .btn {
+    .btn, .button-grid .btn {
         width: 100%;
         text-align: center;
-    }
-
-    /* --- Linkek page specific elements --- */
-    .link-list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        align-items: center;
-        padding-bottom: 40px;
-    }
-
-    .external-link-btn {
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        background-color: var(--primary-color);
-        color: #C3975D;
-        padding: 16px 24px;
-        border-radius: 6px;
-        text-align: center;
-        font-weight: 600;
-        font-size: 1.05rem;
-        transition: background-color 0.2s ease, transform 0.1s ease;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .external-link-btn:hover {
-        background-color: var(--primary-dark);
-        color: #C3975D;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
-    /* --- Gyülekezeti alkalmak specific elements --- */
-    .schedule-container {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding-bottom: 40px;
-    }
-
-    .schedule-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .schedule-list li {
-        background-color: #C3975D;
-        border-left: 4px solid var(--primary-color);
-        padding: 15px 20px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .schedule-title {
-        font-weight: 600;
-        color: var(--primary-dark);
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-    }
-
-    .schedule-time {
-        color: var(--text-color);
-        font-size: 1rem;
-    }
-
-    /* Layout for wider screens */
-    @media (min-width: 600px) {
-        .schedule-list li {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .schedule-title {
-            margin-bottom: 0;
-        }
-        
-        .schedule-time {
-            text-align: right;
-        }
-    }
-
-    /* --- Egyházközség page specific elements --- */
-    .info-section.align-left {
-        text-align: left;
-        max-width: 100%;
-    }
-
-    .info-section.align-left h3 {
-        text-decoration: none;
-        border-bottom: 2px solid var(--primary-color);
-        display: inline-block;
-        padding-bottom: 5px;
-    }
-
-    .data-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    @media (min-width: 600px) {
-        .data-grid {
-            grid-template-columns: 1fr 1fr; /* Két oszlop nagyobb képernyőkön */
-        }
-    }
-
-    .data-grid h4 {
-        color: var(--primary-dark);
-        margin-bottom: 5px;
-    }
-
-    /* Photo gallery styles */
-    .image-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 15px;
-        margin: 30px 0;
-    }
-
-    .image-gallery a {
-        display: block;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .image-gallery a:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .image-gallery img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    /* --- Közérdekű információk page specific elements --- */
-    .button-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto 40px auto;
-    }
-
-    .button-grid .btn {
-        flex: 0 0 auto;
-    }
-
-    @media (min-width: 600px) {
-    .button-grid {
-            flex-direction: column;
-        }
-        .button-grid .btn {
-            width: 100%;
-        }
     }
 }
