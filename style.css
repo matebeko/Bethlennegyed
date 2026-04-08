@@ -332,4 +332,58 @@ img {
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
+
+    /* --- Gyülekezeti alkalmak specific elements --- */
+    .schedule-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .schedule-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .schedule-list li {
+        background-color: #f9f9f9;
+        border-left: 4px solid var(--primary-color);
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .schedule-title {
+        font-weight: 600;
+        color: var(--primary-dark);
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .schedule-time {
+        color: var(--text-color);
+        font-size: 1rem;
+    }
+
+    /* Layout for wider screens */
+    @media (min-width: 600px) {
+        .schedule-list li {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .schedule-title {
+            margin-bottom: 0;
+        }
+        
+        .schedule-time {
+            text-align: right;
+        }
+    }
 }
