@@ -2,21 +2,21 @@
    CSS VARIABLES
    ========================================================================== */
 :root {
-    --primary-color: #C3975D; /* Arany/Barna */
-    --primary-dark: #644400;  /* Sötétbarna */
+    --primary-color: #C3975D;
+    --primary-dark: #644400;
     --bg-color: #ffffff;
     --text-color: #3a3a3a;
     --max-width: 1000px;
 }
 
 /* ==========================================================================
-   ALAPBEÁLLÍTÁSOK (RESET & TYPOGRAPHY)
+   RESET & TYPOGRAPHY
    ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Sima görgetés az oldalon belüli linkekhez */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +44,7 @@ img {
 }
 
 /* ==========================================================================
-   FEJLÉC & NAVIGÁCIÓ
+   HEADER & NAVIGATION
    ========================================================================== */
 .site-header {
     background-color: var(--primary-dark);
@@ -113,7 +113,7 @@ img {
 }
 
 /* ==========================================================================
-   FŐ TARTALOM (Közös elemek)
+   MAIN CONTENT & PAGE-SPECIFIC ELEMENTS
    ========================================================================== */
 .main-content {
     max-width: var(--max-width);
@@ -124,7 +124,7 @@ img {
     gap: 20px;
 }
 
-/* --- Főoldal specifikus elemek --- */
+/* --- Main page specific elements --- */
 .welcome-text {
     text-align: center;
     font-size: 1.5rem;
@@ -148,7 +148,7 @@ img {
     font-family: Garamond, "Times New Roman", serif;
 }
 
-/* --- Hivatal oldal specifikus elemek --- */
+/* --- Hivatal page specific elements --- */
 .button-group {
     display: flex;
     flex-wrap: wrap;
@@ -223,7 +223,7 @@ img {
 }
 
 /* ==========================================================================
-   LÁBLÉC
+   FOOTER
    ========================================================================== */
 .site-footer {
     background-color: var(--primary-color);
@@ -252,7 +252,7 @@ img {
 }
 
 /* ==========================================================================
-   RESZPONSZÍV (MOBIL) NÉZET
+   RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 900px) {
     .menu-toggle {
@@ -301,9 +301,7 @@ img {
         text-align: center;
     }
 
-    /* ==========================================================================
-   LINKEK OLDAL SPECIFIKUS ELEMEK
-   ========================================================================== */
+    /* --- Linkek page specific elements --- */
     .link-list {
         display: flex;
         flex-direction: column;
