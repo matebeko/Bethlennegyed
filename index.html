@@ -3,58 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bethlennegyed Református Egyházközség</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Székelyudvarhely III. Református Egyházközség, Bethlen-negyed</title>
+    <meta name="theme-color" content="#C3975D">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="loading">
-            <div class="church-logo">⛪</div>
-            <h1>Bethlennegyed Református Egyházközség</h1>
-            <p class="subtitle">Köszöntjük honlapunkon!</p>
-            <nav>
-                <a href="#home">Főoldal</a>
-                <a href="#szolgaltatok">Szolgálatok</a>
-                <a href="#hirek">Hírek</a>
-                <a href="#kapcsolat">Kapcsolat</a>
-            </nav>
-        </header>
 
-        <section class="welcome-section loading">
-            <h2>Üdvözöljük egyházközségünkben!</h2>
-            <p class="welcome-text">
-                Örömmel köszöntjük Önöket a Bethlennegyed Református Egyházközség honlapján. 
-                Itt találhatja meg templomunk aktuális programjait, eseményeit és hirdetéseit. 
-                Szeretettel várjuk Önöket istentiszteleteinkre és közösségi programjainkra.
-            </p>
-        </section>
-
-        <div class="announcements" id="announcements">
-            <!-- Announcements will be dynamically loaded here -->
-        </div>
-
-        <footer>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>Cím</h4>
-                    <p>Bethlennegyed Református Egyházközség<br>
-                    Romania</p>
-                </div>
-                <div class="contact-item">
-                    <h4>Istentisztelet</h4>
-                    <p>Vasárnap: 10:00<br>
-                    Szerda: 18:00</p>
-                </div>
-                <div class="contact-item">
-                    <h4>Lelkész</h4>
-                    <p>Bekő István<br>
-                    lelkesz@bethlennegyed.ro</p>
-                </div>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="/">
+                    <img src="/wp-content/uploads/2022/07/tulipanos-111x111.png" alt="Tulipános Logo">
+                </a>
+                <a href="/" class="site-title">
+                    Székelyudvarhely III. Református Egyházközség, Bethlen-negyed
+                </a>
             </div>
-            <p>&copy; 2025 Bethlennegyed Református Egyházközség. Minden jog fenntartva.</p>
-        </footer>
-    </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Menü megnyitása">☰</button>
+            
+            <nav class="main-nav" id="main-navigation">
+                <ul>
+                    <li><a href="/" class="active">Aktuális</a></li>
+                    <li><a href="/?page_id=39">Lelkészi Hivatal</a></li>
+                    <li><a href="/?page_id=41">Közérdekű Információk</a></li>
+                    <li><a href="/?page_id=42">Egyházközség</a></li>
+                    <li><a href="/?page_id=43">Gyülekezeti Alkalmak</a></li>
+                    <li><a href="/?page_id=44">Igehirdetések</a></li>
+                    <li><a href="/?page_id=45">Linkek</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <h2 class="welcome-text">Köszöntjük honlapunkon!</h2>
+
+        <article class="event-card">
+            <img src="/wp-content/uploads/2026/04/Konfi_Csoportkep_2026-1024x688.jpg" alt="Konfi Csoportkép 2026">
+            <p class="event-caption"><strong>Csoportkép, 2026. Virágvasárnapján konfirmált fiatalok.</strong></p>
+        </article>
+
+        <article class="event-card">
+            <img src="/wp-content/uploads/2026/03/Nevsor_Konfi_2026_Hirdetore-1024x861.jpg" alt="Konfirmálók névsora">
+        </article>
+
+        <article class="event-card">
+            <img src="/wp-content/uploads/2026/01/Plakat-a-koncertre.jpg" alt="Koncert plakát">
+        </article>
+
+        <article class="event-card">
+            <p style="color: var(--primary-dark); font-size: 1.2rem;">
+                <strong>2025 Virágvasárnap 24 fiatal konfirmál.<br>Imáinkban hordozzuk őket.</strong>
+            </p>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://m.facebook.com/Bethlen-negyedi-Reform%C3%A1tus-Egyh%C3%A1zk%C3%B6zs%C3%A9g-Sz%C3%A9kelyudvarhely-114428486950571/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Székelyudvarhely III. Református Egyházközség, Bethlen-negyed</p>
+            <p>Honlapunk a Berni Magyarnyelvű Protestáns Gyülekezet támogatásával készült</p>
+            <p>A honlapot készítette és adminisztrálja: Bekő Máté<br>Minden jog fenntartva</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
