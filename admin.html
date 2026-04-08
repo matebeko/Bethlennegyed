@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Hír feltöltése</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #C3975D; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h2>Új hír feltöltése az Aktuális oldalra</h2>
+    <form action="saving.php" method="POST">
+        <label>Titkos jelszó (kötelező):</label>
+        <input type="password" name="jelszo" required>
+
+        <label>Kép URL (opcionális, pl: /wp-content/uploads/...):</label>
+        <input type="text" name="kep">
+
+        <label>Hír szövege:</label>
+        <textarea name="szoveg" rows="5" required></textarea>
+
+        <button type="submit">Posztolás</button>
+    </form>
+</body>
+</html>
