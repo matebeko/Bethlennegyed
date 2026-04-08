@@ -4,8 +4,8 @@
 :root {
     --primary-color: #C3975D;
     --primary-dark: #644400;
-    --bg-color: #ffffff;
-    --text-color: #3a3a3a;
+    --bg-color: #C3975D;
+    --text-color: #644400;
     --max-width: 1000px;
 }
 
@@ -48,7 +48,7 @@ img {
    ========================================================================== */
 .site-header {
     background-color: var(--primary-dark);
-    color: white;
+    color: #644400;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -99,7 +99,7 @@ img {
 }
 
 .main-nav a:hover, .main-nav a.active {
-    color: white;
+    color: #C3975D;
 }
 
 /* Mobil menü gomb */
@@ -161,7 +161,7 @@ img {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--primary-color);
-    color: white;
+    color: #644400;
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
@@ -171,7 +171,7 @@ img {
 
 .btn:hover {
     background-color: var(--primary-dark);
-    color: white;
+    color: #C3975D;
 }
 
 .info-section {
@@ -241,7 +241,7 @@ img {
     width: 40px;
     height: 40px;
     fill: #557dbc;
-    background: white;
+    background: #C3975D;
     border-radius: 50%;
 }
 
@@ -316,7 +316,7 @@ img {
         width: 100%;
         max-width: 600px;
         background-color: var(--primary-color);
-        color: white;
+        color: #C3975D;
         padding: 16px 24px;
         border-radius: 6px;
         text-align: center;
@@ -328,7 +328,7 @@ img {
 
     .external-link-btn:hover {
         background-color: var(--primary-dark);
-        color: white;
+        color: #C3975D;
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
@@ -348,7 +348,7 @@ img {
     }
 
     .schedule-list li {
-        background-color: #f9f9f9;
+        background-color: #C3975D;
         border-left: 4px solid var(--primary-color);
         padding: 15px 20px;
         margin-bottom: 10px;
