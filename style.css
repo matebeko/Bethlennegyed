@@ -77,11 +77,11 @@ img {
 }
 
 .site-title {
-    font-size: 1.2rem;
+    font-size: 1.55rem;
     font-weight: 600;
     color: var(--primary-color);
-    max-width: 300px;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .main-nav ul {
@@ -102,7 +102,7 @@ img {
     color: #C3975D;
 }
 
-/* Mobil menü gomb */
+/* Phone menu button */
 .menu-toggle {
     display: none;
     background: none;
