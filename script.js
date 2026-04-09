@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 hirekTarolo.innerHTML = ''; // "Betöltés folyamatban..." 
 
                 // Végigmegyünk a táblázat sorain (a legújabbak felülre kerülnek, ha visszafelé olvassuk)
-                for (let i = rows.length - 1; i >= 0; i--) {
+                for (let i = rows.length - 1; i > 0; i--) {
                     const row = rows[i];
                     
                     // Ha a sor teljesen üres, ugorjuk át
