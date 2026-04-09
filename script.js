@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     html += `
                     </article>
+                    <hr style="width: 50%; margin: 30px auto; border: 1px solid #C3975D;">
                     `;
                     
                     hirekTarolo.innerHTML += html;
