@@ -81,7 +81,7 @@
         <style>
         .image-gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 12px;
         }
 
@@ -90,9 +90,10 @@
         }
 
         .image-gallery a {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+        aspect-ratio: 1;
         }
 
         .image-gallery a img {
