@@ -1,5 +1,6 @@
 # Bethlennegyed
-This is the main repository of the webpage bethlennegyed.ro
+This is the main repository of the webpage https://bethlennegyed.ro/
+Dev page domain: https://bethlennegyed.pages.dev/
 
 
 https://postimages.org/ -> upload picture, then copy its "Direct link"
