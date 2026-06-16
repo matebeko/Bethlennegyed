@@ -90,10 +90,9 @@
         }
 
         .image-gallery a {
-        display: block;
-        border-radius: 8px;
-        overflow: hidden;
-        aspect-ratio: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
         }
 
         .image-gallery a img {
