@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     let html = `<article class="event-card">`;
                     
                     if (kepUrl) {
-                        html += `<img src="${kepUrl}" alt="Hírhez tartozó kép">`;
+                        html += `<img src="${kepUrl}" alt="A hír hamarosan újból látható lesz">`;
                     }
                     
                     if (szoveg) {
