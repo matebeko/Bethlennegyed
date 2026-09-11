@@ -487,49 +487,61 @@ img {
     display: flex;
     justify-content: flex-end;
 }
-
+ 
 .search-form {
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
-    border-radius: 6px;
+    background-color: #fdf6ec;
+    border-radius: 999px;
     overflow: hidden;
     width: 100%;
     max-width: 320px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(100, 68, 0, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s, border-color 0.2s;
 }
-
+ 
+.search-form:focus-within {
+    border-color: var(--primary-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+ 
 .search-input {
     flex: 1 1 auto;
     border: none;
     outline: none;
-    padding: 10px 14px;
+    padding: 10px 16px;
     font-size: 1rem;
     font-family: inherit;
     color: var(--primary-dark);
-    background-color: var(--primary-color);
+    background-color: transparent;
 }
-
+ 
 .search-input::placeholder {
-    color: #7a5a1f;
-    opacity: 0.9;
+    color: #8a6d3b;
+    opacity: 0.8;
 }
-
+ 
 .search-btn {
     border: none;
     background-color: var(--primary-dark);
-    color: var(--primary-color);
-    padding: 10px 14px;
+    color: #fdf6ec;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s;
     line-height: 1;
+    flex-shrink: 0;
 }
-
+ 
 .search-btn:hover {
     background-color: #4c3300;
 }
-
+ 
 .search-results {
     position: absolute;
     top: 100%;
@@ -547,63 +559,63 @@ img {
     overflow-y: auto;
     z-index: 1100;
 }
-
+ 
 .search-results[hidden] {
     display: none;
 }
-
+ 
 .search-results li {
     padding: 0;
 }
-
+ 
 .search-results li a {
     display: block;
     padding: 10px 16px;
     color: var(--primary-dark);
     border-bottom: 1px solid #eee;
 }
-
+ 
 .search-results li:last-child a {
     border-bottom: none;
 }
-
+ 
 .search-results li a:hover,
 .search-results li a.is-active {
     background-color: var(--primary-color);
     color: var(--primary-dark);
 }
-
+ 
 .search-result-title {
     display: block;
     font-weight: 600;
     font-size: 1rem;
 }
-
+ 
 .search-result-page {
     display: block;
     font-size: 0.8rem;
     color: #8a6d3b;
     margin-top: 2px;
 }
-
+ 
 .search-no-results {
     padding: 12px 16px;
     color: #8a6d3b;
     font-size: 0.95rem;
     text-align: center;
 }
-
+ 
 @media (max-width: 900px) {
     .site-search {
         padding: 10px 20px;
         justify-content: center;
     }
-
+ 
     .search-form,
     .search-results {
         max-width: 100%;
     }
-
+ 
     .search-results {
         right: 20px;
         left: 20px;
